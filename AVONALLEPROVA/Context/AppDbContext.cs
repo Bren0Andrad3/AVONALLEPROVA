@@ -12,7 +12,7 @@ namespace AVONALLEPROVA.Context
         { }
         public DbSet<Produto> Produtos { get; set; }//Serve para mapear a entidade criada, em uma tabela do banco de dados
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)//Configuração da Connection String
         {
             IConfiguration configuration = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
