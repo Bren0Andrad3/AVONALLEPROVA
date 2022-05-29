@@ -4,7 +4,7 @@ using Microsoft.Extensions.Configuration;
 using System.IO;
 
 namespace AVONALLEPROVA.Context
-{
+{//Mapear as classes para um banco de Dados
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options)
