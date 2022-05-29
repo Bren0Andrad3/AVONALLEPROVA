@@ -25,7 +25,7 @@ namespace AVONALLEPROVA
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        // Este método é chamado pelo tempo de execução. Usuado para adicionar serviços ao contêiner.
         public void ConfigureServices(IServiceCollection services)
         {
 
@@ -34,10 +34,10 @@ namespace AVONALLEPROVA
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "AVONALLEPROVA", Version = "v1" });
             });
-            services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("ServerConnection")));
+            services.AddDbContext<AppDbContext>(option => option.UseSqlServer(Configuration.GetConnectionString("ServerConnection")));//definição a configuração do Contexto
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        //Usado para configurar o pipeline de solicitação HTTP.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
