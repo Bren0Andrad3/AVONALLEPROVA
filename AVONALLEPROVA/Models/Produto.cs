@@ -1,6 +1,6 @@
 ﻿namespace AVONALLEPROVA.Models
 {
-    public class Produto
+    public class Produto//Definição das propriedades
     {
         public int Id { get; set; }
         public string Nome { get; set; }
