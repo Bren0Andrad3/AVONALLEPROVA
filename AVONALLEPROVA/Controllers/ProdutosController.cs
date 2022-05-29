@@ -21,14 +21,14 @@ namespace AVONALLEPROVA.Controllers
             _context = context;
         }
 
-        // GET: api/Produtos
+        //Requisição Get
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Produto>>> GetProdutos()
         {
             return await _context.Produtos.ToListAsync();
         }
 
-        // GET: api/Produtos/5
+        // GET: Requisição Get por Id
         [HttpGet("{id}")]
         public async Task<ActionResult<Produto>> GetProduto(int id)
         {
@@ -42,7 +42,7 @@ namespace AVONALLEPROVA.Controllers
             return produto;
         }
 
-        // PUT: api/Produtos/5
+        // Requisição Put
        
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduto(int id, Produto produto)
@@ -73,7 +73,7 @@ namespace AVONALLEPROVA.Controllers
             return NoContent();
         }
 
-        // POST: api/Produtos
+        // Requisição Post
        
         [HttpPost]
         public async Task<ActionResult<Produto>> PostProduto(Produto produto)
@@ -84,7 +84,7 @@ namespace AVONALLEPROVA.Controllers
             return CreatedAtAction("GetProduto", new { id = produto.Id }, produto);
         }
 
-        // DELETE: api/Produtos/5
+        // Requisição Delete
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduto(int id)
         {
