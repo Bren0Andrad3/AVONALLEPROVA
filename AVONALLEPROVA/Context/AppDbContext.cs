@@ -19,7 +19,7 @@ namespace AVONALLEPROVA.Context
             .AddJsonFile("appsettings.json", false, true)
             .Build();
 
-            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection"));
+            optionsBuilder.UseSqlServer(configuration.GetConnectionString("ServerConnection")); //executa um método que pega a Connection String
         }
     }
 }
