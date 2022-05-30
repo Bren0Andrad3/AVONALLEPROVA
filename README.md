@@ -10,3 +10,4 @@ Tecnologia usada .NET Core 5, EF Core, Sql Server e Swagger
 Utilizei a ferramenta do git para tranformar meu código em um repositório de forma automática
 Pacotes utilizados : EntityFramework.core, EntityFramework.SqlServer, EntityFramework.tools, EntityFramework.Design
 A documentação da API foi feita pelo swagger!
+Partes importantes do código comentadas ✌
